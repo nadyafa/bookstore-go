@@ -1,0 +1,194 @@
+{
+	"info": {
+		"_postman_id": "8786f228-8347-46c6-9f0e-c1786ea39f25",
+		"name": "Bookstore-Go",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36288379"
+	},
+	"item": [
+		{
+			"name": "Create a Book-1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Title\":\"Book 1\",\r\n    \"Author\":\"Writter 1\",\r\n    \"Publication\":\"Indie Publisher\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9010/book",
+					"host": [
+						"localhost"
+					],
+					"port": "9010",
+					"path": [
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a Book-2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Title\":\"Book 2\",\r\n    \"Author\":\"Unknown\",\r\n    \"Publication\":\"Unpublished\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9010/book",
+					"host": [
+						"localhost"
+					],
+					"port": "9010",
+					"path": [
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a Book-3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Title\":\"Book 3\",\r\n    \"Author\":\"Writter 3\",\r\n    \"Publication\":\"Famous Publisher\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9010/book",
+					"host": [
+						"localhost"
+					],
+					"port": "9010",
+					"path": [
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9010/book",
+					"host": [
+						"localhost"
+					],
+					"port": "9010",
+					"path": [
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by ID-1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9010/book/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9010",
+					"path": [
+						"book",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by ID-2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9010/book/2",
+					"host": [
+						"localhost"
+					],
+					"port": "9010",
+					"path": [
+						"book",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a Book",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Title\": \"Book 2\",\r\n    \"Author\": \"Writter 2\",\r\n    \"Publication\": \"The Publisher\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9010/book/2",
+					"host": [
+						"localhost"
+					],
+					"port": "9010",
+					"path": [
+						"book",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Book",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:9010/book/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9010",
+					"path": [
+						"book",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
